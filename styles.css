@@ -22,8 +22,8 @@ body {
   gap: 10px;
 }
 
-/* Image panels */
-.image-box {
+/* Panels */
+.panel {
   flex: 0.5;
   position: relative;
   border-radius: 20px;
@@ -35,8 +35,7 @@ body {
   cursor: pointer;
 }
 
-/* Make images fill properly */
-.image-box img {
+.panel img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -44,17 +43,14 @@ body {
   transition: transform 0.4s ease;
 }
 
-/* Slight zoom on hover */
-.image-box:hover img {
+.panel:hover img {
   transform: scale(1.05);
 }
 
-/* Expanded panel */
-.image-box.active {
+.panel.active {
   flex: 5;
 }
 
-/* Text styling */
 .img-text {
   position: absolute;
   bottom: 20px;
@@ -67,7 +63,6 @@ body {
   transition: opacity 0.3s ease-in-out;
 }
 
-/* Show text only when active */
-.image-box.active .img-text {
+.panel.active .img-text {
   opacity: 1;
 }
